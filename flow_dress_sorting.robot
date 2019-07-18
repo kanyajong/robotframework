@@ -37,7 +37,7 @@ Sorting by price
     # ...   id:selectProductSort  price:desc
 
 ผลการทำงานต้องแสดงข้อมูลที่เรียงจากราคามากไปน้อย
-    catalog.WaitUntil
+    catalog.WaitUntilElement
     # Wait Until Element Contains  xpath://*[@id="center_column"]/ul/li[1]/div/div[2]/h5   Printed Summer Dress
 
 ปิดหน้าจอ
