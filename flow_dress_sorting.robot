@@ -42,6 +42,4 @@ Sorting by price
 
 ปิดหน้าจอ
     catalog.CloseBrowser
-    # Close Browser
-
-    
+    # Close Browser   
