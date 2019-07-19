@@ -13,5 +13,5 @@ Call list of users from jsonplaceholder
 
     Should Be Equal   Bret   ${response.json()[0]["username"]}
 
-    ${words}=    FakerLibrary.Words
-    Should Be Equal    Test   ${words}
+    # ${words}=    FakerLibrary.Words
+    # Should Be Equal    Test   ${words}
