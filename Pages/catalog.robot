@@ -14,8 +14,8 @@ Sorting
     Select From List By Value
     ...   id:selectProductSort  price:desc
 
-WaitUntil
-    Wait Until Element Contains  xpath://*[@id="center_column"]/ul/li[1]/div/div[2]/h5   Printed Summer Dress
+# WaitUntil
+#     Wait Until Element Contains  xpath://*[@id="center_column"]/ul/li[1]/div/div[2]/h5
 
 CloseBrowser
     Close Browser
