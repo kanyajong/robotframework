@@ -1,24 +1,24 @@
 {
-	"id": "836bfc97-dc90-4c83-8d22-4ed3fff1ec09",
-	"name": "SWpark",
+	"id": "0004e2e5-a713-4279-b5d6-8a433cd41c85",
+	"name": "SWpark copy",
 	"description": "",
 	"auth": null,
 	"events": null,
 	"variables": [],
 	"order": [
-		"3e592489-eb0f-4681-97b9-92df7da6835e"
+		"3b7b3b18-5407-459d-9516-77b45b754bb6"
 	],
 	"folders_order": [],
 	"folders": [],
 	"requests": [
 		{
-			"id": "3e592489-eb0f-4681-97b9-92df7da6835e",
+			"id": "3b7b3b18-5407-459d-9516-77b45b754bb6",
 			"name": "Test GET user data",
 			"url": "https://jsonplaceholder.typicode.com/users",
 			"description": "",
 			"data": null,
 			"dataMode": null,
-			"headerData": null,
+			"headerData": [],
 			"method": "GET",
 			"pathVariableData": [],
 			"queryParams": [],
@@ -32,10 +32,6 @@
 							"var jsonData = JSON.parse(responseBody);",
 							"tests[\"Size = 10\"] = jsonData.length === 10;",
 							"",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(200);",
-							"});",
-							"",
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -45,6 +41,7 @@
 				}
 			],
 			"folder": null,
+			"headers": "",
 			"pathVariables": {}
 		}
 	]
