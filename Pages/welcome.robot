@@ -8,3 +8,6 @@ ${BROWSER}   gc
 *** Keywords ***
 Open
     Open Browser   ${URL}  browser=${BROWSER}
+
+Home
+    Go To  ${URL}
