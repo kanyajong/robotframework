@@ -1,0 +1,51 @@
+{
+	"id": "836bfc97-dc90-4c83-8d22-4ed3fff1ec09",
+	"name": "SWpark",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"3e592489-eb0f-4681-97b9-92df7da6835e"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "3e592489-eb0f-4681-97b9-92df7da6835e",
+			"name": "Test GET user data",
+			"url": "https://jsonplaceholder.typicode.com/users",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c7eaa62a-8256-496f-bcee-c5656e8cda6e",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"Size = 10\"] = jsonData.length === 10;",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}
